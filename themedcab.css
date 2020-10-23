@@ -68,18 +68,21 @@ a{
 header{
     display:flex;
     width:100vw;
+    flex-direction: column;
 }
 img{
-    padding:7rem;
-    width:50%;
+   
+    width:100%;
     max-height:550px;
     max-width:550px;
+    justify-content: center;
+    margin:auto;
 }
 .logo{
     width:100%;
     max-width: 550px;
     max-width:550px;
-    padding:10rem;
+    
     justify-content: center;
     margin:auto;
     
@@ -99,19 +102,37 @@ h2{
     
 }
 p{
-    width:40%;
+    width:20%;
     padding:5rem 1rem;
     font-size:2rem;
     justify-content:center;
     margin:auto;
 }
 button{
-    width:40%;
+    width:20%;
     font-size:5rem;
     justify-content: center;
     background-color: #009760;
     color:white;
+    margin:auto;
 
+}
+.about{
+    display:flex;
+    justify-content: center;
+    margin:auto;
+    
+}
+.gallery{
+    display:flex;
+    flex-flow:row wrap;
+}
+figure{
+    width:35rem;
+}
+figcaption{
+    width:35rem;
+    font-size:2rem;
 }
 
 @media screen and (max-width:800px){
@@ -120,17 +141,14 @@ button{
     }
     header{
         display:flex;
+        
+        
         width:100%;
     }
-    img{
-        max-width:350px;
-        max-height: 350px;
-    }
-    .logo{
-        max-width:350px;
-        max-height:350px;
+    
+    
+    
 
-    }
     h1{
         font-size:5rem;
         padding:1rem;
@@ -139,8 +157,9 @@ button{
         font-size:3rem;
         padding:1rem;
     }
-    
 }
+    
+
 
 @media screen and (max-width:500px){
     body{
@@ -155,7 +174,7 @@ button{
         min-width:150px;
         min-height:150px;
     }
-    .logo{
-        
-    }
+    
+
+    
 }   
